@@ -1,6 +1,18 @@
 #!/bin/bash
 
-###Install-Docker###
+###Install-Terraform###
+
+terraform_version='1.0.0'
+
+sudo apt update
+sudo apt install wget unzip -y
+wget https://releases.hashicorp.com/terraform/${terraform_version}/terraform_${terraform_version}_linux_amd64.zip
+unzip terraform_${terraform_version}_linux_amd64.zip
+sudo mv ./terraform  /bin/terraform
+rm -r ./terraform_${terraform_version}_linux_amd64.zip
+
+
+# ###Install-Docker###
 
  sudo apt-get update
  sudo apt-get install \
