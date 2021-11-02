@@ -7,5 +7,6 @@ installs
 - Docker
 - Kubectl
 - Gcloud
+- Helm
 
 ```
